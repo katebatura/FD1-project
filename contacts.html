@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+  <html>
+	<head>
+	  <meta charset="utf-8"> 
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	  <title>Контакты</title>
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic" rel="stylesheet">
+	  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> 
+	  <link rel="stylesheet" href="fonts/icomoon/style.css">
+	  <link rel="stylesheet" href="scripts/jquery-ui-1.12.1/jquery-ui.css">
+	  <link rel="stylesheet" href="styles/styles.css" type="text/css">
+	  <style type="text/css">
+		
+		
+		.social-net {
+			width: 30%;
+			margin: auto;
+			display: flex;
+			justify-content: space-around;
+		}
+		.social-net__item {
+			text-decoration: none;
+			display: block;
+			width: 30px;
+			height: 30px;
+			padding: 10px;
+			margin: 10px;
+			border-radius: 50%;
+			border: none;
+			background-color: rgba(255,255,255,.9);
+			box-shadow: 2px 2px 10px black;
+			color: #006182;
+			font-size: 30px;
+			line-height: 30px;
+			text-align: center;			
+		}
+		.social-net__item:hover {
+			animation: social-net-hover .3s forwards;
+		}
+
+		@keyframes social-net-hover {
+			0% {
+				background-color: rgba(255,255,255,.9);
+				transform: scale(1);
+				box-shadow: 2px 2px 10px black;
+			}
+			100% {
+				background-color: rgba(255,255,255,1);
+				transform: scale(1.15);
+				box-shadow: 2px 2px 30px black;
+			}
+		}
+		.social-net__item:active {
+			animation: social-net-active .3s forwards;
+		}
+		@keyframes social-net-active {
+			0% {
+				background-color: rgba(255,255,255,1);
+				transform: scale(1.15);
+				box-shadow: 2px 2px 30px black;
+			}
+			100% {
+				background-color: rgba(255,255,255,.7);
+				transform: scale(.9);
+				box-shadow: 0 0 10px 2px black inset;
+			}
+		}
+
+		/*registration-form для страницы контактов*/
+		.registration {
+			grid-area: 2/1/3/3;
+			margin: 50px auto;
+			width: 650px;
+		}
+		.registration__title {	
+			margin-top: 30px;		
+			font-size: 40px;
+			text-align: center;
+		}
+		.form__inputs {
+			width: 650px;
+			height: 300px;
+			margin: auto;	
+		}
+
+		
+		.registration-form {
+			margin: 20px;
+		}
+		.registration-form__input, .registration-form__textarea {
+			width: 250px;
+			height: 30px;
+			font-size: 16px;
+		}
+		.registration-form__textarea{
+			max-width: 550px;
+			min-width: 200px;
+		}
+		.registration-form-submit {
+			margin: auto;
+			display: block;
+		}
+
+		
+
+		@media (max-width: 980px) {
+			
+			.social-net__item {
+				width: 20px;
+				height: 20px;
+				font-size: 20px;
+				line-height: 20px;		
+			}
+
+
+		}
+		@media (max-width: 860px) {
+			
+			.social-net__item {
+				margin: 5px;	
+			}
+		}
+		@media (max-width: 768px) {
+			
+			.registration {
+				grid-area: 3/1/4/2;
+			}
+
+		}
+		@media (max-width: 700px) {
+			
+			.registration {
+				width: 100%;
+			}
+			.registration__title {
+				margin: 0;
+				font-size: 30px;
+			}
+			.form__inputs {
+				width: 500px;
+				margin: auto;
+				height: 300px;		
+			}
+			.registration-form {
+				margin: 10px;
+			}
+			.registration-form__input, .registration-form__textarea {
+				width: 180px;
+				font-size: 12px;
+			}
+			.registration-form__textarea{
+				max-width: 280px;
+				min-width: 280px;
+				height: 80px;
+				box-sizing: border-box;
+			}
+			.registration-form-comment {
+				display: block;
+				width: 280px;
+				margin: 20px auto;
+			}
+			.registration-form-submit {
+				margin: auto;
+			}
+		}
+		@media (max-width: 510px) {	
+			
+			.form__inputs {
+				height: auto;
+				width: 280px;
+				margin: auto;		
+			}.registration-form__input, .registration-form__textarea {
+				width: 220px;
+				font-size: 14px;
+			}
+		}
+
+	  </style>		
+	</head>
+	<body>
+		<header class="header">
+			<a href="index.html" class="header__logo"></a>
+			<div class="header__nav">
+				<i class="fas fa-tooth header__nav-icon"></i>
+				<ul class="header-nav">
+					<li class="header-nav__item"><a href="index.html">Главная</a></li>
+					<li class="header-nav__item"><a href="services.html">Услуги</a></li>
+					<li class="header-nav__item"><a href="recomendations.html">Рекомендации</a></li>
+					<li class="header-nav__item"><a href="about.html">О нас</a></li>
+					<li class="header-nav__item"><a href="#">Контакты</a></li>
+				</ul> 
+			</div>
+		</header>
+		<main class="main-contacts">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18820.427385954477!2d27.551983538609814!3d53.868588580091775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd1d26d118d9d%3A0x29276775bf26e25!2z0YPQu9C40YbQsCDQnNCw0Y_QutC-0LLRgdC60L7Qs9C-IDE1NCwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1531345066352" frameborder="0" allowfullscreen class="google-map" ></iframe>
+			<div class="contacts__container">
+				<h2 class="contacts__title">Контакты</h2>
+				<p><span class="icon-clock"></span> Пн-Пт : 9.00-21.00</p>
+				<p><span class="icon-clock"></span> Сб-Вс : 10.00-18.00</p>
+				<p><span class="icon-phone"></span> +375 (12) 6081993</p>
+				<p><span class="icon-earth"></span> Минск, ул. Маяковского, 154</p>
+				<br>
+				<p>Присоединяйтесь к нам в соцсетях:</p>
+				<div class="social-net">
+					<a href="#" class="social-net__item"><span class="icon-facebook"></span></a>
+					<a href="#" class="social-net__item"><span class="icon-vk"></span></a>
+					<a href="#" class="social-net__item"><span class="icon-instagram"></span></a>
+				</div>
+			</div>
+			<div class="registration">
+				<h2 class="registration__title">Заказать талон онлайн</h2>
+				<form>
+					<div class="form__inputs">
+					<div class="registration-form">
+						<label for="name" class="registration-form__label">ФИО:</label>
+						<div>
+							<span class="icon-user registration-form__icon"></span>
+							<input type="text" name="name" id="name" placeholder="Введите Ваше ФИО" class="registration-form__input" tabindex="1" required>
+						</div>
+					</div>				
+					<div class="registration-form">
+						<label for="tel" class="registration-form__label">Ваш контактный телефон:</label>
+						<div>
+							<span class="icon-phone registration-form__icon"></span>
+							<input type="tel" name="tel" id="tel" placeholder="Введите номер телефона" class="registration-form__input" tabindex="2" required>
+						</div>
+					</div>
+					<div class="registration-form">
+						<label for="email" class="registration-form__label">Ваш e-mail:</label>
+						<div>
+							<span class="icon-envelop registration-form__icon"></span>
+							<input type="email" name="email" id="email" placeholder="Введите адрес Вашей почты" class="registration-form__input" tabindex="3">
+						</div>
+					</div>
+					<div class="registration-form">
+						<label for="datepicker" class="registration-form__label">Выберите дату:</label>
+						<div>
+							<span class="icon-calendar registration-form__icon"></span>
+							<input name="datepicker" id="datepicker" type="text" class="datepicker registration-form__input" tabindex="4" required >
+						</div>
+					</div>
+					<div class="registration-form">
+						<label for="time" class="registration-form__label">Выберите время приема:</label>
+						<div>
+							<span class="icon-clock registration-form__icon"></span>
+							<input name="time" id="time" type="time" class="time registration-form__input" tabindex="5">
+						</div>
+					</div>
+					<div class="registration-form">
+						<label for="choose-doc" class="registration-form__label">Выбрать доктора:</label>
+						<div>
+							<span class="icon-user-check registration-form__icon"></span>
+							<select id="choose-doc" name="choose-doc" class="registration-form__input">
+								<option value="0"></option>
+								<optgroup label="Терапевтический прием">
+									<option value="1">Мозгова А.П.</option>
+									<option value="2">Скоморох И.Г.</option>
+									<option value="3">Мезенцева Е.Р.</option>
+									<option value="4">Мицкевич В.Д.</option>
+								</optgroup>
+								<optgroup label="Детский прием">
+									<option value="1">Мозгова А.П.</option>
+									<option value="2">Скоморох И.Г.</option>
+									<option value="3">Мезенцева Е.Р.</option>
+								</optgoup>
+								<optgroup label="Ортопедический прием">
+									<option value="4">Мицкевич В.Д.</option>
+									<option value="5">Баринов В.П.</option>
+								</optgroup>
+								<optgroup label="Хирурги">
+									<option value="6">Зыль А.С.</option>
+									<option value="7">Хомич С.А.</option>
+								</optgroup>
+								<optgroup label="Ортодонты">
+									<option value="8">Шевелевич И.И.</option>
+									<option value="1">Мозгова А.П.</option>
+									<option value="5">Баринов В.П.</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+				</div>
+					<div class="registration-form registration-form-comment">
+						<label for="message" class="registration-form__label">Комментарий:</label>
+						<div>
+							<span class="icon-pencil registration-form__icon"></span>
+							<textarea name="message" id="message" placeholder="На что жалуетесь?" class="registration-form__textarea" tabindex="6"></textarea>
+						</div>
+					</div>	
+					<div class="registration-form registration-form-submit">
+						<input type="submit" name="send" id="send" value="Заказать" class="registration-form__submit" onclick="RegistrationSubmit()">
+						<!-- <div class="registration-form-submit-container">
+							<svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+							    <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#006182" fill="transparent"/>
+							</svg>
+						</div> -->
+					</div>
+					
+				</form>
+			</div>	
+		</main>
+		<footer class="footer">
+			<div class="footer-copywrite">&copy; 2018. СтомаDent. Лицензия МЗРБ УНП 26081993.</div>		
+			<div class="footer-contacts">							
+				<div class="social-net_footer">
+					<a href="#" class="social-net__item_footer"><span class="icon-facebook"></span></a>
+					<a href="#" class="social-net__item_footer"><span class="icon-vk"></span></a>
+					<a href="#" class="social-net__item_footer"><span class="icon-instagram"></span></a>
+				</div>
+			</div>
+		</footer>
+		<script src="scripts/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="scripts/jquery-ui-1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="scripts/js.js"></script>
+		<script type="text/javascript">
+			
+
+		</script>
+	</body>
+  </html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+  <html>
+	<head>
+	  <meta charset="utf-8"> 
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	  <title>Цены</title>
+	 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic" rel="stylesheet">
+	  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> 
+	  <link rel="stylesheet" href="fonts/icomoon/style.css">
+	  <link rel="stylesheet" href="scripts/jquery-ui-1.12.1/jquery-ui.css">
+	  <link rel="stylesheet" href="scripts/jquery.arcticmodal-0.3/jquery.arcticmodal-0.3.css">
+	  <link rel="stylesheet" href="scripts/jquery.arcticmodal-0.3/themes/simple.css">
+	  <link rel="stylesheet" href="styles/styles.css" type="text/css">
+	  <style type="text/css">
+		
+		.content-price {
+			width: 80%;
+			margin: 50px auto;
+			grid-area: 1/1/4/2;
+		}
+		.services-sidebar__nav {
+			grid-area: 2/2/3/3;
+		}
+		.services-sidebar__registration {
+			grid-area: 1/2/2/3;
+
+		}		
+		.services-sidebar__recomendation {
+			grid-area: 3/2/4/3;
+		}
+
+		@media (max-width: 980px) {
+			.services-sidebar__nav-item {
+				font-size: 15px;
+			}
+
+		}
+			
+		@media (max-width: 768px) {
+			
+			.services-sidebar__nav {
+				grid-area: 2/1/3/2;
+			}
+			.content-price {
+				grid-area: 1/1/2/-1;
+			}
+			.services-sidebar__registration {
+				grid-area: 2/2/3/3;
+			}
+			.services-sidebar__recomendation {
+				grid-area: 3/1/4/-1;
+				border: none;
+				flex-wrap: wrap;
+				flex-direction: row;
+				padding: 20px;
+				box-sizing: border-box;
+			}
+
+		}
+		@media (max-width: 510px) {
+			
+			.services-sidebar__nav {
+				grid-area: 2/1/3/2;
+			}
+			.services-sidebar__registration {
+				grid-area: 3/1/4/2;
+				border: none;
+			}
+			.services-sidebar__recomendation {
+				grid-area: 4/1/5/-1;
+				border: none;
+				flex-direction: column;
+			}
+			
+		}
+		
+		@media (max-width: 480px) {
+			
+			.services-registration__title {
+				font-size: 20px;
+			}
+		}
+
+	  </style>
+	</head>
+	<body>
+		<header class="header">
+			<a href="index.html" class="header__logo"></a>
+			<div class="header__nav">
+				<i class="fas fa-tooth header__nav-icon"></i>
+				<ul class="header-nav">
+					<li class="header-nav__item"><a href="index.html">Главная</a></li>
+					<li class="header-nav__item"><a href="services.html">Услуги</a></li>
+					<li class="header-nav__item"><a href="recomendations.html">Рекомендации</a></li>
+					<li class="header-nav__item"><a href="about.html">О нас</a></li>
+					<li class="header-nav__item"><a href="contacts.html">Контакты</a></li>
+				</ul> 
+			</div>
+		</header>
+
+		<main class="main-price">
+			<section class="content-price">
+				<input type="button" onclick="history.back();" value="&larr; Назад" class="services-content__prev"/>
+				<h1 class="main-price__title">ОРИЕНТИРОВОЧНЫЕ ЦЕНЫ</h1>
+
+				<table class="price-table">
+					<tr>
+						<th colspan="2" class="price-table__section-title">Консультация</th>
+					</tr>
+					<tr>
+						<td>Консультация с анализом 3D-снимка и выдачей заключения</td>
+						<td>50 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Консультация без выдачи заключения</td>
+						<td>БЕСПЛАТНО</td>
+					</tr>
+					<tr>
+						<th colspan="2" class="price-table__section-title">Отбеливание зубов</th>
+					</tr>
+					<tr>
+						<td>*New* Отбеливание зубов с использованием системы BEYOND POLUS 2017</td>
+						<td>395 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Домашнее отбеливание (2 каппы + набор для отбеливания)</td>
+						<td>375 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Внутрикоронковое отбеливание</td>
+						<td>195 руб. 00 коп. - 250 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<th colspan="2" class="price-table__section-title">Эстетика улыбки</th>
+					</tr>
+					<tr>
+						<td>Цифровое моделирование улыбки</td>
+						<td>550 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Скайс</td>
+						<td>55 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<th colspan="2" class="price-table__section-title">Профессиональная чистка</th>
+					</tr>
+					<tr>
+						<td>Профессиональная чистка зубов у взрослых (Airflow + ультразвук + фторлак)</td>
+						<td>115 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Чистка зубов повышенной точности с применением микроскопа</td>
+						<td>195 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Профессиональная чистка зубов у детей (в зависимости от возраста ребенка, консультация+ щетка+паста+фторлак)</td>
+						<td>75 руб. 00 коп. - 85 руб. 00 коп.</td>
+					</tr>
+						<th colspan="2" class="price-table__section-title">Детская стоматология</th>
+					</tr>
+					<tr>
+						<td>Консультация</td>
+						<td>21 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Подготовка ребенка к стоматологическому лечению</td>
+						<td>55 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Кариес молочных зубов</td>
+						<td>105 руб. 00 коп. - 125 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Пульпит, периодонтит молочных зубов (за все лечение в 2-3 визита, включая пломбу)</td>
+						<td>175 руб. 00 коп. - 225 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Герметизация фиссур без препарирования</td>
+						<td>45 руб. 00 коп. - 59 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Герметизация фиссур с препарированием</td>
+						<td>65 руб. 00 коп. - 85 руб. 00 коп.</td>
+					</tr>
+						<th colspan="2" class="price-table__section-title">Лечение зубов</th>
+					</tr>
+					<tr>
+						<td>Эстетическая реставрация зуба фотополимерным материалом</td>
+						<td>155 руб. 00 коп. - 295 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Винир. Усложненная эстетическая реставрация фронтальных зубов</td>
+						<td>380 руб. 00 коп. - 450 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Усложненная эстетическая реставрация боковых зубов</td>
+						<td>295 руб. 00 коп. - 450 руб. 00 коп.</td>
+					</tr>
+						<th colspan="2" class="price-table__section-title">Лечение / перелечивание корневых каналов с использованием дентального микроскопа (без стоимости пломбы)</th>
+					</tr>
+					<tr>
+						<td>Одноканальный зуб</td>
+						<td>150 руб. 00 коп. - 195 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Двухканальный зуб</td>
+						<td>195 руб. 00 коп. - 250 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Трехканальный зуб</td>
+						<td>250 руб. 00 коп. - 310 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Четырехканальный зуб</td>
+						<td>290 руб. 00 коп. - 345 руб. 00 коп.</td>
+					</tr>
+						<th colspan="2" class="price-table__section-title">Хирургическая стоматология</th>
+					</tr>
+					<tr>
+						<td>Удаление молочного зуба</td>
+						<td>45 руб. 00 коп. - 55 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Удаление постоянного зуба</td>
+						<td>95 руб. 00 коп. - 145 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Удаление зуба мудрости</td>
+						<td>250 руб. 00 коп. - 450 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Усложненное удаление постоянного зуба</td>
+						<td>от 350 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Резекция верхушки корня зуба, операции сохраняющие зуб</td>
+						<td>от 300 руб. 00 коп.</td>
+					</tr>
+						<th colspan="2" class="price-table__section-title">Имплантация</th>
+					</tr>
+					<tr>
+						<td>Имплантация (Германия, Израиль) без стоимости коронки</td>
+						<td>915 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Закрытый синус-лифтинг</td>
+						<td>915 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Открытый синус-лифтинг</td>
+						<td>2050 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Аугментация</td>
+						<td>1230 руб. 00 коп.</td>
+					</tr>
+						<th colspan="2" class="price-table__section-title">Протезирование</th>
+					</tr>
+					<tr>
+						<td>Безметалловая керамика</td>
+						<td>от 790 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Металлокерамические коронки</td>
+						<td>от 350 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Цельнолитые коронки</td>
+						<td>от 200 руб. 50 коп.</td>
+					</tr>
+					<tr>
+						<td>Литые культевые вкладки</td>
+						<td>от 120 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Абатменты</td>
+						<td>от 100 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Съемное протезирование</td>
+						<td>от 550 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Каппа для лечения бруксизма</td>
+						<td>от 180 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Временные конструкции</td>
+						<td>от 45 руб. 00 коп.</td>
+					</tr>
+						<th colspan="2" class="price-table__section-title">Ортодонтия (исправление прикуса)</th>
+					</tr>
+					<tr>
+						<td>Консультация ортодонта</td>
+						<td>20 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Лечение съемными аппаратами</td>
+						<td>320 руб. 00 коп. - 375 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Металлические брекеты (стандартная система), 2 челюсти</td>
+						<td>1 200 руб. 00 коп. - 1 300 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Эстетические брекеты (стандартная система), 2 челюсти</td>
+						<td>1 800 руб. 00 коп. - 1 900 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Самолигирующиеся металлические брекеты DamonQ, Smart Clip SL, 2 челюсти</td>
+						<td>2 350 руб. 00 коп. - 2 550 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Самолигирующиеся эстетические брекеты DamonClear, 2 челюсти</td>
+						<td>3 550 руб. 00 коп. - 3 750 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Самолигирующиеся брекеты эстетика+металл (DamonClear+ DamonQ), 2 челюсти</td>
+						<td>2 950 руб. 00 коп. - 3 200 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Лингвальные брекеты, 2 челюсти</td>
+						<td>13 000 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Снятие брекет-системы</td>
+						<td>200 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Ретенционный аппарат</td>
+						<td>150 руб. 00 коп. - 200 руб. 00 коп.</td>
+					</tr>
+					<tr>
+						<td>Несъемные аппараты для детей</td>
+						<td>250 руб. 00 коп. - 300 руб. 00 коп.</td>
+					</tr>
+				</table>
+			</section>
+			<section class="services-sidebar__nav">
+				<ul>Услуги
+					<li><a href="terapy.html" class="services-sidebar__nav-item">Терапия</a></li>
+					<li><a href="ortopedy.html" class="services-sidebar__nav-item">Протезирование</a></li>
+					<li><a href="surgery.html" class="services-sidebar__nav-item">Хирургия</a></li>
+					<li><a href="implants.html" class="services-sidebar__nav-item">Имплантация</a></li>
+					<li><a href="child.html" class="services-sidebar__nav-item">Детский прием</a></li>
+					<li><a href="ortodonty.html" class="services-sidebar__nav-item">Ортодонтия</a></li>
+				</ul>				
+			</section>
+			<section class="services-sidebar__registration">
+				<h3 class="services-registration__title">Заказать талон онлайн</h3>
+				<a href="#exampleModal1" class="registration-online__href" onclick="$('#exampleModal1').arcticmodal()">Заказать</a>
+			</section>
+			<section class="services-sidebar__recomendation">
+				<h3>Видеорекомендации</h3>
+				<iframe width="200" height="112.5" src="https://www.youtube.com/embed/qtknfES7_kk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe width="200" height="112.5" src="https://www.youtube.com/embed/vO_IBtaH8P8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe width="200" height="112.5" src="https://www.youtube.com/embed/yN2Q03oOwAI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<a href="recomendations.html">Смотреть другие видео &rarr;</a>
+			</section>
+
+		</main>
+
+
+		<footer class="footer">
+			<div class="footer-copywrite">&copy; 2018. СтомаDent. Лицензия МЗРБ УНП 26081993.</div>		
+			<div class="footer-contacts">							
+				<div class="social-net_footer">
+					<a href="#" class="social-net__item_footer"><span class="icon-facebook"></span></a>
+					<a href="#" class="social-net__item_footer"><span class="icon-vk"></span></a>
+					<a href="#" class="social-net__item_footer"><span class="icon-instagram"></span></a>
+				</div>
+			</div>
+		</footer>
+
+		<div style="display: none;">
+		    <div class="box-modal" id="exampleModal1">
+		        <div class="box-modal_close arcticmodal-close">закрыть</div>
+		        <div class="registration">
+				<h2 class="registration__title">Заказать талон онлайн</h2>
+				<form>
+					<div class="form__inputs">
+					<div class="registration-form">
+						<label for="name" class="registration-form__label">ФИО:</label>
+						<div>
+							<span class="icon-user registration-form__icon"></span>
+							<input type="text" name="name" id="name" placeholder="Введите Ваше ФИО" class="registration-form__input" tabindex="1" required>
+						</div>
+					</div>				
+					<div class="registration-form">
+						<label for="tel" class="registration-form__label">Ваш контактный телефон:</label>
+						<div>
+							<span class="icon-phone registration-form__icon"></span>
+							<input type="tel" name="tel" id="tel" placeholder="Введите номер телефона" class="registration-form__input" tabindex="2" required>
+						</div>
+					</div>
+					<div class="registration-form">
+						<label for="email" class="registration-form__label">Ваш e-mail:</label>
+						<div>
+							<span class="icon-envelop registration-form__icon"></span>
+							<input type="email" name="email" id="email" placeholder="Введите адрес Вашей почты" class="registration-form__input" tabindex="3">
+						</div>
+					</div>
+					<div class="registration-form">
+						<label for="datepicker" class="registration-form__label">Выберите дату:</label>
+						<div>
+							<span class="icon-calendar registration-form__icon"></span>
+							<input name="datepicker" id="datepicker" type="text" class="datepicker registration-form__input" tabindex="4" required >
+						</div>
+					</div>
+					<div class="registration-form">
+						<label for="time" class="registration-form__label">Выберите время приема:</label>
+						<div>
+							<span class="icon-clock registration-form__icon"></span>
+							<input name="time" id="time" type="time" class="time registration-form__input" tabindex="5">
+						</div>
+					</div>
+					<div class="registration-form">
+						<label for="choose-doc" class="registration-form__label">Выбрать доктора:</label>
+						<div>
+							<span class="icon-user-check registration-form__icon"></span>
+							<select id="choose-doc" name="choose-doc" class="registration-form__input">
+								<option value="0"></option>
+								<optgroup label="Терапевтический прием">
+									<option value="1">Мозгова А.П.</option>
+									<option value="2">Скоморох И.Г.</option>
+									<option value="3">Мезенцева Е.Р.</option>
+									<option value="4">Мицкевич В.Д.</option>
+								</optgroup>
+								<optgroup label="Детский прием">
+									<option value="1">Мозгова А.П.</option>
+									<option value="2">Скоморох И.Г.</option>
+									<option value="3">Мезенцева Е.Р.</option>
+								</optgoup>
+								<optgroup label="Ортопедический прием">
+									<option value="4">Мицкевич В.Д.</option>
+									<option value="5">Баринов В.П.</option>
+								</optgroup>
+								<optgroup label="Хирурги">
+									<option value="6">Зыль А.С.</option>
+									<option value="7">Хомич С.А.</option>
+								</optgroup>
+								<optgroup label="Ортодонты">
+									<option value="8">Шевелевич И.И.</option>
+									<option value="1">Мозгова А.П.</option>
+									<option value="5">Баринов В.П.</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+				</div>
+					<div class="registration-form">
+						<label for="message" class="registration-form__label">Комментарий:</label>
+						<div>
+							<span class="icon-pencil registration-form__icon"></span>
+							<textarea name="message" id="message" placeholder="На что жалуетесь?" class="registration-form__textarea" tabindex="6"></textarea>
+						</div>
+					</div>	
+					<div class="registration-form registration-form-submit">
+						<input type="submit" name="send" id="send" value="Заказать" class="registration-form__submit" onclick="RegistrationSubmit()">
+						<!-- <div class="registration-form-submit-container">
+							<svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+							    <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#006182" fill="transparent"/>
+							</svg>
+						</div> -->
+					</div>
+					
+				</form>
+			</div>	
+		    </div>
+		</div>
+
+
+		<script src="scripts/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="scripts/jquery-ui-1.12.1/jquery-ui.js"></script>
+		<script src="scripts/jquery.arcticmodal-0.3/jquery.arcticmodal-0.3.min.js"></script>
+		<script type="text/javascript" src="scripts/js.js"></script>
+	</body>
+  </html>
